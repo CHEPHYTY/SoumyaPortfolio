@@ -23,14 +23,7 @@
     --blue-400: #61dafb;
     --blue-800: #0a61ae;
     /*========== Colors ==========*/
-    --first-color: hsl(82, 60%, 28%);
-    --title-color: hsl(0, 0%, 15%);
-    --text-color: hsl(0, 0%, 35%);
-    --body-color: hsl(0, 0%, 95%);
     --container-color: hsl(0, 0%, 100%);
-    --yellow-100: hsl(51, 100%, 88%);
-    --base-800: hsl(0, 0%, 20%);
-    --base-100: hsl(0, 0%, 100%);
 
     /*========== Font and typography ==========*/
     --body-font: "Poppins", sans-serif;
@@ -289,9 +282,9 @@ h1 {
         align-items: flex-end;
 
         img {
-            margin-top: 60px;
-            max-width: 420px;
-            margin-bottom: -10px;
+            /* margin-top: 60px; */
+            max-width: 520px;
+            height: 560px;
         }
     }
 }
@@ -311,6 +304,7 @@ h1 {
         height: 128px;
         overflow: hidden;
         position: relative;
+        
 
         .track {
             position: absolute;
@@ -538,7 +532,7 @@ h3 {
                     .card__title {
                         font-size: var(--h2-font-size);
                         font-weight: 500;
-                        color: var(--title-color);
+                        color: var(--base-800);
                     }
 
                     .card__description {
@@ -551,7 +545,7 @@ h3 {
                         text-decoration: none;
                         font-size: var(--small-font-size);
                         font-weight: 500;
-                        color: var(--first-color);
+                        color: var(--blue);
                     }
 
                     .card__button:hover {
@@ -675,8 +669,8 @@ h3 {
 /*=============== BUTTON ===============*/
 .btn {
     display: inline-block;
-    background-color: var(--first-color);
-    border: 1px solid var(--first-color);
+    background-color: var(--blue-100);
+    border: 1px solid var(--blue-100);
     color: var(--white);
     padding: 0.9rem 2.5rem;
     font-size: var(--large-font-size);
@@ -686,13 +680,13 @@ h3 {
 
 .btn--transparent {
     background-color: transparent;
-    color: var(--first-color);
+    color: var(--blue-100);
 }
 
 /* Button hover */
 
 .btn:hover {
-    background-color: var(--first-color-dark);
+    background-color: var(--blue);
     color: var(--white);
 }
 
@@ -726,7 +720,7 @@ h3 {
 
 
 .contact__icon {
-    color: var(--first-color);
+    color: var(--blue-100);
     font-size: var(--large-font-size);
     line-height: 1.8;
 }
@@ -747,7 +741,7 @@ h3 {
 }
 
 .input__control {
-    color: var(--title-color);
+    color: var(--base-800);
     background-color: var(--yellow-100);
     border: 1px solid transparent;
     padding: 0.9rem .75rem;
@@ -784,7 +778,7 @@ h3 {
 }
 
 .footer__copyright {
-    color: var(--text-color);
+    color: var(--base-400);
 }
 
 .footer__social-links {
@@ -793,6 +787,6 @@ h3 {
 }
 
 .footer__social-link {
-    color: var(--text-color);
+    color: var(--base-400);
     font-size: var(--large-font-size);
 }
